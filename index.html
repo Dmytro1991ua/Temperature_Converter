@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Simple JS Celsius to Fahrenheit Converter</title>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+   <div class="container">
+      <form class="form" onsubmit="calculateTemp(); return false">
+         <label class="form__label" for="temp">Please enter the temperature you'd like to convert.</label>
+         <div class="form__tempBody">
+            <input name="temp" class="form__temp" id="temp" type="usernumber" placeholder="Enter a number">
+            <select name="temp_diff" class="form__diffTemp">
+               <option value="celsius">°Celsius</option>
+               <option value="fahrenheit">°Fahrenheit</option>
+            </select>
+         </div>
+         <div class="form__btn">
+            <button name="temp" type="submit" class="convert">Convert</button>
+            <a href="#" class="reset">Reset</a>
+         </div>
+         <div class="form__output">
+            <span class="form__resultContainer"></span>
+         </div>
+      </form>
+   </div>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
