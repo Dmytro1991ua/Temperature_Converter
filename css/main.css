@@ -42,15 +42,19 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: .2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
 .form__tempBody {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
+    align-items: stretch;
+    padding-bottom: 3rem;
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .form__temp,
@@ -67,7 +71,7 @@ body {
 }
 
 .form__temp:not(:last-child) {
-    margin-right: .7rem;
+   margin-bottom: 3rem;
 }
 
 .form__temp::placeholder {
